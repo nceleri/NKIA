@@ -3,14 +3,19 @@
 <head>
 
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="stilo.css">
-    <title>NKIA</title>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">;
+	<link rel="stylesheet" href="stilo.css" type="text/css" media="">
+    <title>NKIA s.t.</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
 
 <body>
 
+    <div id="chat">
+        chat
+    </div>
 <!-- Inicia Cabezote -->
 
 <header>
@@ -32,11 +37,11 @@
 
 	<ul>
     
-    	<li class="botones">Inicio</li>
-        <li class="botones">Servicios</li>
-        <li class="botones">Ventas</li>
-        <li class="botones">Nosotros</li>
-        <li class="botones">Contacto</li>
+    	<a href="#"><li class="botones">Inicio</li></a>
+        <a href="#"><li class="botones">Servicios</li></a>
+        <a href="#"><li class="botones">Ventas</li></a>
+        <a href="#"><li class="botones">Nosotros</li></a>
+        <a href="#"><li class="botones">Contacto</li></a>
   
     </ul>
 
@@ -78,10 +83,10 @@
 	
     <aside id="izq">
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
         </ul>
     </aside>
     
@@ -98,11 +103,14 @@
         <h1>Ingreso</h1>
 
         <form action="">
-            <input type="text" placeholder="Usuario">
+            <input type="text" placeholder="Usuario" required>
 
-            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña" required>
             
-            <input type="email" placeholder="e-mail">
+            <input type="email" placeholder="e-mail" required>
+
+            <input type="submit" value="Enviar">
+
         </form>
 
     </aside>
