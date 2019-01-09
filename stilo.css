@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*selector universal*/
 *{
 	margin:0;
@@ -262,3 +263,269 @@ footer{
 	
 
 
+=======
+/*selector universal*/
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family: sans-serif;
+	}
+
+#chat{
+	position:fixed;
+	width: 250px;
+	height: 40px;
+	bottom: 0;
+	right: 20px;
+	background: chartreuse;
+	z-index: 1;
+	color: blue;
+	text-align: center;
+	line-height: 40px; /*alinear el texto verticalmente de acuro a la altura de la caja*/
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20;
+	border-radius: 20px 20px 0 0;
+	cursor: pointer;
+}	
+
+body{
+	background: #3B3B98;
+	/*background: url(img/fondo.jpg) no-repeat center top;*/
+ 	 background-size: cover;
+	}
+
+header{
+	position:relative;/*para cajas principales*/
+	widows: 1024px auto;
+	margin-bottom: 20px;
+	height:120px;	
+	}
+
+
+.logo .avatar{
+	position:absolute;/*permite ubicar una caja interna dentro de una principal*/
+	top: 0px;
+	left:0px;
+	width:100px;
+	height:100px;	
+	border-radius: 100%;
+	margin: 10px 10px;
+	}
+
+	
+.redes{
+	position:absolute;
+	width:42px;
+	height:42px;
+	background:#ccc;
+    border-radius:100%;
+    border: none;
+
+	}
+	
+#icono1{
+	top:42px;
+    right:120px;   
+    background: url( img/Facebook.png) center;
+    background-size: 44px 44px;    
+	}
+	
+#icono2{
+	top:42px;
+    right:71px;
+    background: url(img/instangram.jpg) center;
+    background-size: 43px 43px;
+
+	}
+	
+#icono3{
+	top:42px;
+    right:19px;
+    background: url(img/twtr.png) center;
+    background-size: 43px 43px;
+    }
+    		
+nav{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:48px;
+	}
+		
+.botones{
+	float:left;
+	width:196px;
+	margin:0px 2px;
+	height:48px;
+	/*background:#333;*/
+	font-family: 'Staatliches', cursive;
+	color: #FC427B;
+	text-shadow: 2px 3px brown;
+	font-size: 40px;
+	text-align: center;
+	line-height: 48px;
+	}
+
+a .botones:hover{ /*pseudoclase*/
+	color: yellow;
+}	
+
+a .botones:active{
+	color: #888;
+}
+	
+#top{
+	position:relative;
+	margin:20px auto;
+	width:1000px;
+	height:192px;
+	}
+
+#top ul{
+	width:1010px;
+	height:192px;
+	}
+	
+#top ul li{
+	float:left;
+	width:326px;
+	height:192px;
+	background: #636e72;
+	margin-right:10px;
+	text-align: center;
+	}
+#top ul li p{
+	font-size: 14;
+	margin: 10px;
+}	
+
+	/*#top ul li img{}.. aca accedo a las imagenes si deseo..... #top ul li h1{}...a los titulos..etc*/
+	
+section{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:453px;
+}
+	
+aside#izq{
+	position:absolute;
+	left:0;
+	top:0;
+	width:200px;
+	height:453px;
+}
+
+aside#izq ul li {
+	background:#dfe6e9;
+	padding: 10px;
+	margin: 2px 10px;
+	list-style: square;
+	list-style-position: inside;
+	list-style-image: url(img/pin.png);
+}	
+
+aside#izq ul li a {
+	text-decoration: none;
+}
+	
+article{
+	position:absolute;
+	left:200px;
+	top:0;
+	width:600px;
+	height:453px;
+	color:#b2bec3;
+}
+
+article h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	margin: 20px;	
+}	
+
+article p img{
+	float: left;
+	margin-right: 15px;
+}
+
+article p{
+	margin: 5px 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+aside#der{
+	position:absolute;
+	right:0;
+	top:0;
+	width:200px;
+	height:453px;
+	}
+
+aside#der h1{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #82589F;
+	color: white;
+	margin-bottom: 5px;	
+}
+
+aside#der input {
+	background:#dfe6e9;
+	padding: 10px;
+	margin: 5px 0px;
+	width: 176px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+
+aside#der input[type="submit"]{
+	width: 200px;
+	border: 0px;
+	background: tomato;
+}
+
+/*
+------no convie que sea una imagen de lista cada uno?-------
+aside#der input[type="text"]{
+	background: url(img/usuariojpg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+} 
+
+aside#der input[type="password"]{
+	background: url(img/llave.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+
+aside#der input[type="email"]{
+	background: url(img/mail.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+*/
+
+footer{
+	position:relative;
+	margin-top:20px;
+	widows: 1024px auto;
+	height:70px;
+	background:#888;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+
+	}
+	
+
+
+>>>>>>> e456e8cf8021b85d24bc84fb40b6fc31c66de88c
