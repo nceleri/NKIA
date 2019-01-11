@@ -2,7 +2,8 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    
     <link rel="stylesheet" href="stilo.css" type="text/css" media="">
     <link rel="stylesheet" href="stilo-icono.css" type="text/css" media="">
     <link rel="stylesheet" href="pushbar.css">
@@ -17,7 +18,7 @@
 
 <body>
 <!--chat flotante-->
-    <div id="chat"><i class="iconochat far fa-comments"></i>chat</div>
+<div id="chat"><i class="iconochat far fa-comments"></i>chat</div>
 
 <!--redes-->
 <div class="contenedorDeLogos">
@@ -53,7 +54,31 @@
 
 <!-- Cierra Cabezote -->
 
-<!-- Inicia Barra de Navegación -->
+<!--nueva barra push-->
+
+<div class="contenedor">
+    <nav>
+        <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+    </nav>
+</div>
+<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+        <div class="btn-cerrar">
+            <button data-pushbar-close><i class="fas fa-window-close"></i></button>
+        </div>
+        <nav class="menu">
+            <a href="#"><li class="botones">Inicio</li></a>
+            <a href="#"><li class="botones">Servicios</li></a>
+            <a href="#"><li class="botones">Ventas</li></a>
+            <a href="#"><li class="botones">Nosotros</li></a>
+            <a href="#"><li class="botones">Contacto</li></a>
+        </nav>
+    
+    </div>
+
+
+<!--cierre nueva barra push-->
+
+<!-- Inicia Barra de Navegación 
 <nav>
 
 	<ul>
@@ -68,7 +93,7 @@
 
 </nav>
 
-<!-- Cierra Barra de Navegación -->
+ Cierra Barra de Navegación -->
 
 <!-- Inicia parte Superior -->
 
@@ -146,6 +171,15 @@
 <footer>&copy todos los derechos reservados</footer>
 
 <!-- Cierra Pie de Página -->
+
+
+<script src="js/pushbar.js"></script>
+<script>
+    var pushbar = new Pushbar({
+        blur:true,
+        overlay:true,
+    });
+</script>
 
 </body>
 
