@@ -31,7 +31,7 @@
 
 
 body{
-	background: #D3D3D3;
+	background: rgb(55, 8, 99);
 	/*background: url(img/fondo.jpg) no-repeat center top;*/
  	 background-size: cover;
 	}
@@ -48,51 +48,99 @@ header{
 .logo .avatar{
 	position:absolute;/*permite ubicar una caja interna dentro de una principal*/
 	top: 0px;
-	left:0px;
-	width:100px;
-	height:100px;	
+	left:510px;
+	width: 120px;
+	height:120px;	
 	border-radius: 100%;
 	margin: 10px 10px;
+	z-index: 1;
+	
 	}
 
 
 .contenedor {
+
 		width: 90%;
-		max-width: 1000px;
+		max-width: 1000px;		
 		margin: auto;
+		margin-left: 10px;
 		padding-bottom: 120px;
 	}
+
+.fa-bars{
+	color: #FA8072;
+}	
 
 nav {
 		width: 100%;
 		display: flex;
+		margin-top: 10px;
 		margin-bottom: 60px;
 	}
 
 nav .btn-menu {
+			
+		position: fixed;
 		display: inline-block;
 		width: 65px;
 		height: 65px;
-		border: 1px solid #000;
+		border: 8px solid #FA8072;
 		background: transparent;
 		cursor: pointer;
 		font-size: 28px;
 		margin-right: 20px;
 		transition: .3s ease all;
+		z-index: 2;
 	}
+
 
 nav .btn-menu:hover {
-		border:1px solid #828282;
-		color: #828282;
+		border:1px solid #FA8072;
+		color: #FA8072;
 	}
-
 	
+.btn-cerrar{
+		text-align: right;
+}	
+
+.bt {
+	background:transparent;
+	border: 0;
+}
+
+.fa-window-close{
+	color: #FA8072;
+	cursor:pointer;
+	font-size: 20px;
+}
+
+
+.botones{
+	float: left;;
+	width:160px;
+	margin:2px 2px;
+	height:48px;
+	font-family: 'Staatliches', cursive;
+	color: #FC427B;	
+	font-size: 30px;
+	text-align: left;
+	line-height: 48px;
+	transition: .4s ease color;
+}
+
+
+a .botones:hover{
+	color: yellow;
+	
+}
+
 
 #top{
 	position:relative;
 	margin:20px auto;
 	width:1000px;
 	height:192px;
+	z-index: 3;
 	}
 
 #top ul{
@@ -251,23 +299,7 @@ footer{
 		height:48px;
 		}
 		
-	.botones{
-		float:left;
-		width:196px;
-		margin:0px 2px;
-		height:48px;
-		font-family: 'Staatliches', cursive;
-		color: #FC427B;
-		text-shadow: 2px 3px brown;
-		font-size: 40px;
-		text-align: center;
-		line-height: 48px;
-	}
 	
-	
-	a .botones:hover{
-		color: yellow;
-	}	
 	
 	a .botones:active{
 		color: #888;

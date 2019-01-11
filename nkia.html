@@ -38,45 +38,38 @@
 <header>
 
 	<div class="logo">
-        
 		<img src="img/nkia4.png" class="avatar" alt="Avatar Image">
 	</div>
     
+<!--nueva barra push-->
 
-        <!--
+<div class="contenedor">
+        <nav>
+            <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+        </nav>
+</div>
+
+<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+        <div class="btn-cerrar">
+            <button data-pushbar-close class="bt"><i class="fas fa-window-close"></i></button>
+        </div>
+            <ul>
+                <a href="#"><li class="botones">Inicio</li></a>
+                <a href="#"><li class="botones">Servicios</li></a>
+                <a href="#"><li class="botones">Ventas</li></a>
+                <a href="#"><li class="botones">Nosotros</li></a>
+                <a href="#"><li class="botones">Contacto</li></a>
+            </ul>
             
-        <div id="icono1" class="redes"></div>
-        <div id="icono2" class="redes"></div>
-        <div id="icono3" class="redes"></div>-->
-    
-    
+</div>
+<!--cierre nueva barra push-->
+
+
 </header>
 
 <!-- Cierra Cabezote -->
 
-<!--nueva barra push-->
 
-<div class="contenedor">
-    <nav>
-        <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
-    </nav>
-</div>
-<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
-        <div class="btn-cerrar">
-            <button data-pushbar-close><i class="fas fa-window-close"></i></button>
-        </div>
-        <nav class="menu">
-            <a href="#"><li class="botones">Inicio</li></a>
-            <a href="#"><li class="botones">Servicios</li></a>
-            <a href="#"><li class="botones">Ventas</li></a>
-            <a href="#"><li class="botones">Nosotros</li></a>
-            <a href="#"><li class="botones">Contacto</li></a>
-        </nav>
-    
-    </div>
-
-
-<!--cierre nueva barra push-->
 
 <!-- Inicia Barra de Navegación 
 <nav>
@@ -171,6 +164,8 @@
 <footer>&copy todos los derechos reservados</footer>
 
 <!-- Cierra Pie de Página -->
+
+
 
 
 <script src="js/pushbar.js"></script>

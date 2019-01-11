@@ -23,6 +23,7 @@
         color: white;
         padding: 20px;
     }
+   
     .pushbar_overlay{
         z-index: -999;
         position: fixed;
@@ -85,3 +86,5 @@
     .pushbar.opened{
        transform: translateX(0px) translateY(0px);
     }
+
+   
