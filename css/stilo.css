@@ -69,7 +69,7 @@
 	
 [class*='col-']{
 	float: left;
-	border: 1px solid black;padding: 10px;
+	
 } 
 /*-----fin col y fil -------*/
 
@@ -137,7 +137,7 @@ nav ul li{
 
 nav ul li a{
 	display: block;
-	background:black;	
+		
 	font-family: 'Staatliches', cursive;
 	color: #FC427B;	
 	font-size: 30px;
