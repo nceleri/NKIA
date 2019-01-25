@@ -4,9 +4,10 @@
 
     <meta charset="utf-8">
     
-    <link rel="stylesheet" href="stilo.css" type="text/css" media="">
-    <link rel="stylesheet" href="stilo-icono.css" type="text/css" media="">
-    <link rel="stylesheet" href="pushbar.css">
+    <link rel="stylesheet" href="css/stilo.css" type="text/css" media="">
+    <link rel="stylesheet" href="css/stilo-icono.css" type="text/css" media="">
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="css/estilo-responsivo.css">
     <title>NKIA s.t.</title>
 
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
@@ -17,6 +18,7 @@
 </head>
 
 <body>
+
 <!--chat flotante-->
 <div id="chat"><i class="iconochat far fa-comments"></i>chat</div>
 
@@ -32,147 +34,146 @@
         <h2 class="fas fa-plus-circle"></h2>
 </div>   
 
-
-<!-- Inicia Cabezote -->
-
-<header>
-
-	<div class="logo">
-		<img src="img/nkia4.png" class="avatar" alt="Avatar Image">
-	</div>
-    
-<!--nueva barra push-->
-
-<div class="contenedor">
-        <nav>
-            <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
-        </nav>
-</div>
-
-<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
-        <div class="btn-cerrar">
-            <button data-pushbar-close class="bt"><i class="fas fa-window-close"></i></button>
-        </div>
-            <ul>
-                <a href="#"><li class="botones">Inicio</li></a>
-                <a href="#"><li class="botones">Servicios</li></a>
-                <a href="#"><li class="botones">Ventas</li></a>
-                <a href="#"><li class="botones">Nosotros</li></a>
-                <a href="#"><li class="botones">Contacto</li></a>
-            </ul>
-            
-</div>
-<!--cierre nueva barra push-->
-
-
-</header>
-
-<!-- Cierra Cabezote -->
-
-<!-- Inicia Barra de Navegación 
-<nav>
-
-	<ul>
-    
-    	<a href="#"><li class="botones">Inicio</li></a>
-        <a href="#"><li class="botones">Servicios</li></a>
-        <a href="#"><li class="botones">Ventas</li></a>
-        <a href="#"><li class="botones">Nosotros</li></a>
-        <a href="#"><li class="botones">Contacto</li></a>
-  
-    </ul>
-
-</nav>
-
- Cierra Barra de Navegación -->
-
-<!-- Inicia parte Superior -->
-
-<div id="top">
-
-	<ul>
-    	<li>
-            
-            <img src="" alt="">
-            <h1>titulo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tristique metus. Vestibulum tempus sit amet nisi dapibus suscipit. Praesent sem elit, hendrerit vel eros quis, interdum egestas massa. Maecenas in lectus aliquam.</p>
-        </li>
+    <div class="contenedor">        
+            <!--=====================================
+            SECCION 1
+            ======================================-->
+         <header class="fila">
+                
+            <div id="logo" class="col-xl-4 col-lg-3 col-md-2 col-sm-12 col-12">
+                
+                <center class="logo">
+                    <img src="img/nkia4.png" alt="Avatar Imagen" class="avatar">
+                </center>
+            </div>
         
-        <li>
-            <img src="" alt="">
-            <h1>titulo</h1>
-            <p>aca ca un parrafo</p>
-        </li>
+            <div class="col-xl-8 col-lg-9 col-md-10 col-sm-0 col-0">
+
+            </div>
+                    
+        </header>
         
-        <li>
-            <img src="" alt="">
-            <h1>titulo</h1>
-            <p>aca ca un parrafo</p>
-        </li>
-    </ul>
-    
-</div>
+            <!--=====================================
+            SECCION 2
+            ======================================-->
+        
+            <nav class="fila">
+                
+                <ul >
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Inicio </a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Servicios</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Ventas</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Nosotros</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Contacto</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12"><a class="botones" href="#">Media</a></li>	
+                </ul>
+        
+            </nav>
+        
+            <!--=====================================
+            SECCION 3
+            ======================================-->
+        
+            <section id="seccion3" class="fila">
+                
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    
+                    <center>
+                        <img src="img/img01.jpg">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </center>
+                    
+                </div>
+        
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    
+                    <center>
+                        <img src="img/img02.jpg">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </center>
+                    
+                </div>
+        
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    
+                    <center>
+                        <img src="img/img03.jpg">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </center>
+                    
+                </div>
+        
+            </section>
+        
+            <!--=====================================
+            SECCION 4
+            ======================================-->
+        
+            <section id="seccion4" class="fila">
+                        
+                <aside id="izq" class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    
+                    <ul>
+                
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+          
+                    </ul>
+        
+                </aside>
+        
+                <article class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    
+                    <h1>Lorem Ipsum</h1>
+                    <p><img src="img/nkia3.png">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet libero in leo suscipit consequat. Vivamus et nunc neque. Proin vel eros nec nisi luctus laoreet sed vitae nulla. Sed non nulla interdum, consequat turpis at, euismod leo. Fusce fringilla convallis viverra. Integer vel lacus id tortor viverra luctus dapibus et nulla. Integer scelerisque neque eget tortor bibendum, non ultricies tellus vehicula. Morbi imperdiet gravida nisl, non congue ante fringilla in. Mauris laoreet accumsan ultrices.</p>
+                    <br>
+                    <p>Sed feugiat, magna non sagittis porttitor, massa risus iaculis nisi, id semper ante nisi sed justo. In placerat ipsum in metus consectetur suscipit. Donec ante nibh, pulvinar eu lectus vel, aliquam cursus enim. Proin nibh eros, tincidunt et est quis, elementum ultrices eros. Mauris accumsan ac metus in viverra.Integer fringilla urna eu fringilla blandit. Suspendisse et tellus venenatis, aliquam sapien at, pharetra orci. Etiam elit arcu, aliquam eu turpis bibendum, facilisis dapibus augue. </p>		
+        
+                </article>
+        
+                <aside id="der" class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    
+                        <h1>Ingreso</h1>
 
-<!-- Cierra parte Superior -->
-
-<!-- Inicia Sección -->
-
-<section>
-	
-    <aside id="izq">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-        </ul>
-    </aside>
-    
-    <article>
-        <h1>titulo</h1>
-        <p>           
-            <img src="" alt="">
-
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-        </p>
-    </article>
-    
-    <aside id="der">
-        <h1>Ingreso</h1>
-
-        <form action="">
-            <input type="text" placeholder="Usuario" required>
-
-            <input type="password" placeholder="Contraseña" required>
+                        <form action="">
+                            <input type="text" placeholder="Usuario" required>
+                
+                            <input type="password" placeholder="Contraseña" required>
+                            
+                            <input type="email" placeholder="e-mail" required>
+                
+                            <input type="submit" value="Enviar">
+                
+                        </form>
+                
+                </aside>
+        
+        
+        
+            </section>
+        
+            <!--=====================================
+            SECCION 5
+            ======================================-->
+        
+            <footer class="fila">
+                
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">&copy; Todos los derechos reservados.</div>
+                
+            </footer>
+        
+    </div>
             
-            <input type="email" placeholder="e-mail" required>
-
-            <input type="submit" value="Enviar">
-
-        </form>
-
-    </aside>
-    
-</section>
-
-<!-- Cierra Sección -->
-
-<!-- Inicia Pie de Página -->
-
-<footer>&copy todos los derechos reservados</footer>
-
-<!-- Cierra Pie de Página -->
-
-
-
-
 <script src="js/pushbar.js"></script>
 <script>
     var pushbar = new Pushbar({
         blur:true,
         overlay:true,
     });
-</script>
-
+ </script>
 </body>
-
